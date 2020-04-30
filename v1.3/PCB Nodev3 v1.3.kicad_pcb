@@ -60,6 +60,7 @@
     (pad_to_mask_clearance 0.051)
     (solder_mask_min_width 0.25)
     (aux_axis_origin 0 0)
+    (grid_origin 35.7632 107.823)
     (visible_elements 7FFFFFFF)
     (pcbplotparams
       (layerselection 0x010fc_ffffffff)
@@ -1306,7 +1307,7 @@
     )
   )
 
-  (module Connector_PinHeader_2.54mm:PinHeader_1x15_P2.54mm_Vertical (layer F.Cu) (tedit 59FED5CC) (tstamp 0)
+  (module Connector_PinHeader_2.54mm:PinHeader_1x15_P2.54mm_Vertical (layer F.Cu) (tedit 59FED5CC) (tstamp 5EAA54E7)
     (at 116.332 71.247 90)
     (descr "Through hole straight pin header, 1x15, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x15 2.54mm single row")
