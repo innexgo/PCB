@@ -14,7 +14,7 @@ For usage with the NodeMCUv3, connects to the MFRC522 through SPI.
 
 - ###### 440 Hz buzzer || passive buzzer
 
-## License
+## Licenses
 
 The antenna and matching circuitry was designed by Limor Fried/Ladyada for Adafruit Industries.
 
@@ -26,7 +26,7 @@ Creative Commons Attribution-ShareAlike 3.0 Unported legal text: [Web Link](http
 
 Original README.md text from their repo: [Web Link](https://github.com/adafruit/Adafruit-PN532-RFID-NFC-Breakout/blob/master/README.md)  |  <a href="ref/Adafruit_PN532_Breakout_README.md">Current Repo Link, assetless</a>
 
-
+---
 
 Additional work designed by Probably an Asian for Innexgo LLC.
 
