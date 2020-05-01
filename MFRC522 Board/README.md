@@ -10,7 +10,7 @@ For usage with the NodeMCUv3, connects to the MFRC522 through SPI.
 
 - ###### MFRC522 over SPI
 
-- ###### Tuned 13.56MHz Antenna (adapted, see [licenses](./README.md#licenses))
+- ###### Tuned 13.56MHz Antenna (adapted, see [licenses](#licenses))
 
 - ###### Controllable Status light
 
