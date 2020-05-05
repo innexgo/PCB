@@ -130,17 +130,6 @@ F 3 "" H 1650 3600 50  0001 C CNN
 	1    1650 3600
 	0    1    1    0   
 $EndComp
-$Comp
-L RF_Module:MFRC522 U1
-U 1 1 5EA9A706
-P 4750 3250
-F 0 "U1" H 4550 3350 50  0000 L CNN
-F 1 "MFRC522" H 4550 3250 50  0000 L CNN
-F 2 "Package_DFN_QFN:QFN-32-1EP_5x5mm_P0.5mm_EP3.1x3.1mm" H 4750 3250 50  0001 C CNN
-F 3 "https://www.nxp.com/docs/en/data-sheet/MFRC522.pdf" H 4750 3250 50  0001 C CNN
-	1    4750 3250
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4400 2600 4400 2350
 Wire Wire Line
@@ -1078,7 +1067,7 @@ L Device:LED LED2
 U 1 1 5EAE3EF8
 P 2600 6300
 F 0 "LED2" V 2639 6183 50  0000 R CNN
-F 1 "LED" V 2548 6183 50  0000 R CNN
+F 1 "LED_BLUE" V 2548 6183 50  0000 R CNN
 F 2 "LED_SMD:LED_0603_1608Metric" H 2600 6300 50  0001 C CNN
 F 3 "~" H 2600 6300 50  0001 C CNN
 	1    2600 6300
@@ -1089,7 +1078,7 @@ L Device:LED LED1
 U 1 1 5EAE370C
 P 1500 6300
 F 0 "LED1" V 1539 6183 50  0000 R CNN
-F 1 "LED" V 1448 6183 50  0000 R CNN
+F 1 "LED_GREEN" V 1448 6183 50  0000 R CNN
 F 2 "LED_SMD:LED_0603_1608Metric" H 1500 6300 50  0001 C CNN
 F 3 "~" H 1500 6300 50  0001 C CNN
 	1    1500 6300
@@ -1129,7 +1118,7 @@ L Device:C_Small C3
 U 1 1 5EACC585
 P 1750 4800
 F 0 "C3" H 1842 4846 50  0000 L CNN
-F 1 "C_Small" H 1842 4755 50  0000 L CNN
+F 1 "1uF" H 1842 4755 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 1750 4800 50  0001 C CNN
 F 3 "~" H 1750 4800 50  0001 C CNN
 	1    1750 4800
@@ -1162,7 +1151,7 @@ L Device:C_Small C4
 U 1 1 5EACCF0D
 P 2350 4800
 F 0 "C4" H 2442 4846 50  0000 L CNN
-F 1 "C_Small" H 2442 4755 50  0000 L CNN
+F 1 "1uF" H 2442 4755 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 2350 4800 50  0001 C CNN
 F 3 "~" H 2350 4800 50  0001 C CNN
 	1    2350 4800
@@ -1175,4 +1164,103 @@ Wire Wire Line
 	1000 4100 1650 4100
 Text Notes 7050 7100 0    50   ~ 0
 Designed by Probably an Asian\nAntenna design and matching circuit adapted from Adafruit's PN532 Breakout Board\n\nhttps://github.com/innexgo/pcb\n\nINNEXGO LLC.
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5EAF8031
+P 8100 800
+F 0 "H1" H 8328 846 50  0000 L CNN
+F 1 "MountingHole" H 8328 755 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 8100 800 50  0001 C CNN
+F 3 "~" H 8100 800 50  0001 C CNN
+	1    8100 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5EAF898E
+P 8100 1100
+F 0 "H3" H 8328 1146 50  0000 L CNN
+F 1 "MountingHole" H 8328 1055 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 8100 1100 50  0001 C CNN
+F 3 "~" H 8100 1100 50  0001 C CNN
+	1    8100 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5EAF83C7
+P 8950 800
+F 0 "H2" H 9178 846 50  0000 L CNN
+F 1 "MountingHole" H 9178 755 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 8950 800 50  0001 C CNN
+F 3 "~" H 8950 800 50  0001 C CNN
+	1    8950 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 5EAF9734
+P 8950 1100
+F 0 "H4" H 9178 1146 50  0000 L CNN
+F 1 "MountingHole" H 9178 1055 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 8950 1100 50  0001 C CNN
+F 3 "~" H 8950 1100 50  0001 C CNN
+	1    8950 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:ToolingHole H5
+U 1 1 5EB15676
+P 8100 1400
+F 0 "H5" H 8185 1446 50  0000 L CNN
+F 1 "ToolingHole" H 8185 1355 50  0000 L CNN
+F 2 "Custom:TOOLING_HOLE_JLCPCB_SMT" H 8100 1400 50  0001 C CNN
+F 3 "~" H 8100 1400 50  0001 C CNN
+	1    8100 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:ToolingHole H7
+U 1 1 5EAF7D4C
+P 8850 1400
+F 0 "H7" H 8935 1446 50  0000 L CNN
+F 1 "ToolingHole" H 8935 1355 50  0000 L CNN
+F 2 "Custom:TOOLING_HOLE_JLCPCB_SMT" H 8850 1400 50  0001 C CNN
+F 3 "~" H 8850 1400 50  0001 C CNN
+	1    8850 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:ToolingHole H6
+U 1 1 5EAF80D3
+P 8100 1650
+F 0 "H6" H 8185 1696 50  0000 L CNN
+F 1 "ToolingHole" H 8185 1605 50  0000 L CNN
+F 2 "Custom:TOOLING_HOLE_JLCPCB_SMT" H 8100 1650 50  0001 C CNN
+F 3 "~" H 8100 1650 50  0001 C CNN
+	1    8100 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Graphic:Logo_Open_Hardware_Small LG1
+U 1 1 5EB0E76A
+P 8950 1750
+F 0 "LG1" H 8950 2025 50  0001 C CNN
+F 1 "Logo_Open_Hardware_Small" H 8950 1525 50  0001 C CNN
+F 2 "Custom:OSHWLOGO_TOP_0.2" H 8950 1750 50  0001 C CNN
+F 3 "~" H 8950 1750 50  0001 C CNN
+	1    8950 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L RF_Module:MFRC522 U1
+U 1 1 5EA9A706
+P 4750 3250
+F 0 "U1" H 4550 3350 50  0000 L CNN
+F 1 "MFRC522" H 4550 3250 50  0000 L CNN
+F 2 "Package_DFN_QFN:QFN-32-1EP_5x5mm_P0.5mm_EP3.1x3.1mm" H 4750 3250 50  0001 C CNN
+F 3 "https://www.nxp.com/docs/en/data-sheet/MFRC522.pdf" H 4750 3250 50  0001 C CNN
+	1    4750 3250
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

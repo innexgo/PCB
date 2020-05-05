@@ -25,6 +25,17 @@ fp-info-cache
 *.xml
 *.csv
 
+# Exported pos files
+*.pos
+POS/
+
+# Exported gbr files
+*.gbr
+*.zip
+
+# Exported drl files
+*.drl
+
 #Vim
 *.swp
 *~
