@@ -20,4 +20,4 @@ For usage with the NodeMCUv3, connects to the MFRC522 through SPI.
 
 Designed by Henry Chen/Probably an Asian.
 
-Work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit [Web Link](http://creativecommons.org/licenses/by-sa/4.0/),  [Current Repo Link](../LICENSE_CC_BY_SA_4.txt), or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
+Work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit [Web Link](http://creativecommons.org/licenses/by-sa/4.0/),  [Current Repo Link](/LICENSE_CC_BY_SA_4.txt), or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
