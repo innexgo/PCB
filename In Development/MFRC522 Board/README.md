@@ -24,12 +24,12 @@ It has been adapted to be used with the MFRC522 IC from NXP.
 
 Their original design can be found here: [Adafruit NFC/RFID controller breakout board - v1.6 PCB](https://github.com/adafruit/Adafruit-PN532-RFID-NFC-Breakout), under the Creative Commons Attribution-ShareAlike 3.0 Unported license.
 
-Creative Commons Attribution-ShareAlike 3.0 Unported legal text: [Web Link](https://creativecommons.org/licenses/by-sa/3.0/legalcode)  |  [Current Repo Link](../LICENSEv3.txt)
+Creative Commons Attribution-ShareAlike 3.0 Unported legal text: [Web Link](https://creativecommons.org/licenses/by-sa/3.0/legalcode)  |  [Current Repo Link](../LICENSE_CC_BY_SA_3.txt)
 
 Original README.md text from their repo: [Web Link](https://github.com/adafruit/Adafruit-PN532-RFID-NFC-Breakout/blob/master/README.md)  |  [Current Repo Link, assetless](ref/Adafruit_PN532_Breakout_README.md)
 
 ---
 
-Additional work designed by Probably an Asian for Innexgo LLC.
+Additional work designed by Henry Chen/Probably an Asian for Innexgo LLC.
 
-All additional work by Probably an Asian is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit [Web Link](http://creativecommons.org/licenses/by-sa/4.0/),  [Current Repo Link](../LICENSEv4.txt), or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
+All additional work by Henry Chen/Probably an Asian is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit [Web Link](http://creativecommons.org/licenses/by-sa/4.0/),  [Current Repo Link](../LICENSE_CC_BY_SA_4.txt), or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
