@@ -49,27 +49,27 @@ $EndComp
 $Comp
 L Connector:Screw_Terminal_01x03 J1
 U 1 1 5EB74930
-P 1000 1000
-F 0 "J1" H 918 675 50  0000 C CNN
-F 1 "Screw_Terminal_01x03" H 918 766 50  0000 C CNN
-F 2 "Custom:TE-C_3_Pos_Buchanan_Screw_Terminal" H 1000 1000 50  0001 C CNN
-F 3 "~" H 1000 1000 50  0001 C CNN
-	1    1000 1000
+P 2000 1350
+F 0 "J1" H 1918 1025 50  0000 C CNN
+F 1 "Screw_Terminal_01x03" H 1918 1116 50  0000 C CNN
+F 2 "Custom:TE-C_3_Pos_Buchanan_Screw_Terminal" H 2000 1350 50  0001 C CNN
+F 3 "~" H 2000 1350 50  0001 C CNN
+	1    2000 1350
 	-1   0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR0102
 U 1 1 5EB76B3E
-P 2000 900
-F 0 "#PWR0102" H 2000 650 50  0001 C CNN
-F 1 "GND" H 2005 727 50  0000 C CNN
-F 2 "" H 2000 900 50  0001 C CNN
-F 3 "" H 2000 900 50  0001 C CNN
-	1    2000 900 
+P 3000 1250
+F 0 "#PWR0102" H 3000 1000 50  0001 C CNN
+F 1 "GND" H 3005 1077 50  0000 C CNN
+F 2 "" H 3000 1250 50  0001 C CNN
+F 3 "" H 3000 1250 50  0001 C CNN
+	1    3000 1250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1200 1100 1550 1100
+	2200 1450 2550 1450
 Wire Wire Line
 	3300 2000 3400 2000
 Wire Wire Line
@@ -192,31 +192,75 @@ Wire Wire Line
 Wire Wire Line
 	3700 2000 4100 2000
 Wire Wire Line
-	1200 900  2000 900 
-Text HLabel 1550 1000 2    50   Output ~ 0
+	2200 1250 3000 1250
+Text HLabel 2550 1350 2    50   Output ~ 0
 EN
 Wire Wire Line
-	1200 1000 1550 1000
+	2200 1350 2550 1350
 $Comp
 L power:VCC #PWR0101
 U 1 1 5EB75F92
-P 1550 1100
-F 0 "#PWR0101" H 1550 950 50  0001 C CNN
-F 1 "VCC" V 1567 1228 50  0000 L CNN
-F 2 "" H 1550 1100 50  0001 C CNN
-F 3 "" H 1550 1100 50  0001 C CNN
-	1    1550 1100
+P 2550 1450
+F 0 "#PWR0101" H 2550 1300 50  0001 C CNN
+F 1 "VCC" V 2567 1578 50  0000 L CNN
+F 2 "" H 2550 1450 50  0001 C CNN
+F 3 "" H 2550 1450 50  0001 C CNN
+	1    2550 1450
 	0    1    1    0   
 $EndComp
 $Comp
 L Mechanical:MountingHole H1
 U 1 1 5EB8BFEE
-P 2950 950
-F 0 "H1" H 3050 996 50  0000 L CNN
-F 1 "MountingHole" H 3050 905 50  0000 L CNN
-F 2 "MountingHole:MountingHole_4.3mm_M4" H 2950 950 50  0001 C CNN
-F 3 "~" H 2950 950 50  0001 C CNN
-	1    2950 950 
+P 6000 1500
+F 0 "H1" H 6100 1546 50  0000 L CNN
+F 1 "MountingHole" H 6100 1455 50  0000 L CNN
+F 2 "MountingHole:MountingHole_4.3mm_M4_DIN965_Pad" H 6000 1500 50  0001 C CNN
+F 3 "~" H 6000 1500 50  0001 C CNN
+	1    6000 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5EC6FA54
+P 6000 2000
+F 0 "H2" H 6100 2046 50  0000 L CNN
+F 1 "MountingHole" H 6100 1955 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad" H 6000 2000 50  0001 C CNN
+F 3 "~" H 6000 2000 50  0001 C CNN
+	1    6000 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5EC70FD9
+P 7000 2000
+F 0 "H3" H 7100 2046 50  0000 L CNN
+F 1 "MountingHole" H 7100 1955 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad" H 7000 2000 50  0001 C CNN
+F 3 "~" H 7000 2000 50  0001 C CNN
+	1    7000 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 5EC71607
+P 6000 2500
+F 0 "H4" H 6100 2546 50  0000 L CNN
+F 1 "MountingHole" H 6100 2455 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad" H 6000 2500 50  0001 C CNN
+F 3 "~" H 6000 2500 50  0001 C CNN
+	1    6000 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H5
+U 1 1 5EC7191E
+P 7000 2500
+F 0 "H5" H 7100 2546 50  0000 L CNN
+F 1 "MountingHole" H 7100 2455 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad" H 7000 2500 50  0001 C CNN
+F 3 "~" H 7000 2500 50  0001 C CNN
+	1    7000 2500
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
