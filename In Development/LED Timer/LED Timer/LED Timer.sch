@@ -458,31 +458,8 @@ F 5 "A130089CT-ND" H 6000 1150 50  0001 C CNN "Digikey Part"
 	1    6000 1150
 	1    0    0    -1  
 $EndComp
-Text HLabel 6000 1800 0    50   Input ~ 0
-GPIO16
 Wire Wire Line
 	6000 1400 6000 1250
-Wire Wire Line
-	6000 1700 6000 1800
-Text HLabel 6750 1000 1    50   Input ~ 0
-RST
-Wire Wire Line
-	6750 1000 6750 1100
-$Comp
-L Switch:SW_Push SW1
-U 1 1 5ED3BE4B
-P 6750 1500
-F 0 "SW1" V 6704 1648 50  0000 L CNN
-F 1 "DNP" V 6795 1648 50  0000 L CNN
-F 2 "Button_Switch_SMD:SW_SPST_EVQQ2" H 6750 1700 50  0001 C CNN
-F 3 "https://industrial.panasonic.com/ac/cdn/e/control/switch/light-touch/catalog/sw_lt_eng_6s_th.pdf" H 6750 1700 50  0001 C CNN
-F 4 "EVQ-Q2Y03W" V 6750 1500 50  0001 C CNN "Manufacturer Part"
-F 5 "P12961SCT-ND" V 6750 1500 50  0001 C CNN "Digikey Part"
-	1    6750 1500
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	6750 1800 6750 1700
 $Comp
 L Connector:Conn_01x04_Male J2
 U 1 1 5ED40813
@@ -497,7 +474,7 @@ $EndComp
 Wire Wire Line
 	8200 1100 8200 1150
 Text HLabel 8550 1150 2    50   Input ~ 0
-GPIO12
+GPIO13
 Wire Wire Line
 	8200 1150 8550 1150
 Connection ~ 8200 1150
@@ -554,19 +531,6 @@ F 4 "CRGCQ0805F100K" H 2400 3800 50  0001 C CNN "Manufacturer Part"
 F 5 "A129773CT-ND" H 2400 3800 50  0001 C CNN "Digikey Part"
 	1    2400 3800
 	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R_Small R7
-U 1 1 5ED490CD
-P 6750 1200
-F 0 "R7" H 6809 1246 50  0000 L CNN
-F 1 "470" H 6809 1155 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 6750 1200 50  0001 C CNN
-F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1773204-3&DocType=DS&DocLang=English" H 6750 1200 50  0001 C CNN
-F 4 "CRGCQ0603J470R" H 6750 1200 50  0001 C CNN "Manufacturer Part"
-F 5 "A130089CT-ND" H 6750 1200 50  0001 C CNN "Digikey Part"
-	1    6750 1200
-	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_Small R8
@@ -649,8 +613,6 @@ Wire Wire Line
 Text HLabel 7200 4600 3    50   Input ~ 0
 0VA
 Text HLabel 7550 2950 3    50   Input ~ 0
-0VA
-Text HLabel 6750 1800 3    50   Input ~ 0
 0VA
 Text HLabel 2400 3100 1    50   Input ~ 0
 EXT_ADC
@@ -863,4 +825,92 @@ F 3 "~" H 10300 1350 50  0001 C CNN
 	1    10300 1350
 	1    0    0    -1  
 $EndComp
+Text HLabel 6650 1800 3    50   Input ~ 0
+0VA
+$Comp
+L Device:R_Small R7
+U 1 1 5ED490CD
+P 6650 1200
+F 0 "R7" H 6709 1246 50  0000 L CNN
+F 1 "470" H 6709 1155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 6650 1200 50  0001 C CNN
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1773204-3&DocType=DS&DocLang=English" H 6650 1200 50  0001 C CNN
+F 4 "CRGCQ0603J470R" H 6650 1200 50  0001 C CNN "Manufacturer Part"
+F 5 "A130089CT-ND" H 6650 1200 50  0001 C CNN "Digikey Part"
+	1    6650 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 1800 6650 1700
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5ED3BE4B
+P 6650 1500
+F 0 "SW1" V 6604 1648 50  0000 L CNN
+F 1 "DNP" V 6695 1648 50  0000 L CNN
+F 2 "Button_Switch_SMD:SW_SPST_EVQQ2" H 6650 1700 50  0001 C CNN
+F 3 "https://industrial.panasonic.com/ac/cdn/e/control/switch/light-touch/catalog/sw_lt_eng_6s_th.pdf" H 6650 1700 50  0001 C CNN
+F 4 "EVQ-Q2Y03W" V 6650 1500 50  0001 C CNN "Manufacturer Part"
+F 5 "P12961SCT-ND" V 6650 1500 50  0001 C CNN "Digikey Part"
+	1    6650 1500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6650 1000 6650 1100
+Text HLabel 6650 1000 1    50   Input ~ 0
+RST
+Text HLabel 7200 1800 3    50   Input ~ 0
+0VA
+$Comp
+L Device:R_Small R13
+U 1 1 5ECF1904
+P 7200 1200
+F 0 "R13" H 7259 1246 50  0000 L CNN
+F 1 "470" H 7259 1155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 7200 1200 50  0001 C CNN
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1773204-3&DocType=DS&DocLang=English" H 7200 1200 50  0001 C CNN
+F 4 "CRGCQ0603J470R" H 7200 1200 50  0001 C CNN "Manufacturer Part"
+F 5 "A130089CT-ND" H 7200 1200 50  0001 C CNN "Digikey Part"
+	1    7200 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7200 1800 7200 1700
+$Comp
+L Switch:SW_Push SW2
+U 1 1 5ECF190D
+P 7200 1500
+F 0 "SW2" V 7154 1648 50  0000 L CNN
+F 1 "SW2" V 7245 1648 50  0000 L CNN
+F 2 "Button_Switch_SMD:SW_SPST_EVQQ2" H 7200 1700 50  0001 C CNN
+F 3 "https://industrial.panasonic.com/ac/cdn/e/control/switch/light-touch/catalog/sw_lt_eng_6s_th.pdf" H 7200 1700 50  0001 C CNN
+F 4 "EVQ-Q2Y03W" V 7200 1500 50  0001 C CNN "Manufacturer Part"
+F 5 "P12961SCT-ND" V 7200 1500 50  0001 C CNN "Digikey Part"
+	1    7200 1500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7200 1000 7200 1100
+Wire Wire Line
+	6000 1700 6000 1800
+Text HLabel 6000 1800 0    50   Input ~ 0
+GPIO16
+$Comp
+L Device:R_Small R14
+U 1 1 5ECFC284
+P 7200 2650
+F 0 "R14" H 7050 2600 50  0000 C CNN
+F 1 "12K" H 7050 2700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 7200 2650 50  0001 C CNN
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1773204-3&DocType=DS&DocLang=English" H 7200 2650 50  0001 C CNN
+F 4 "CRGCQ0603F12K" V 7200 2650 50  0001 C CNN "Manufacturer Part"
+F 5 "A129701CT-ND" V 7200 2650 50  0001 C CNN "Digikey Part"
+	1    7200 2650
+	-1   0    0    1   
+$EndComp
+Connection ~ 7200 2750
+Text HLabel 7200 2550 0    50   Input ~ 0
+GPIO5
+Text HLabel 7200 1000 1    50   Input ~ 0
+GPIO5
 $EndSCHEMATC
