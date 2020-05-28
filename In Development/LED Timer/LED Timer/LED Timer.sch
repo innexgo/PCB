@@ -548,14 +548,14 @@ $EndComp
 $Comp
 L Device:LED D4
 U 1 1 5ED49A6C
-P 8600 2350
-F 0 "D4" H 8593 2095 50  0000 C CNN
-F 1 "Blue 3.2" H 8593 2186 50  0000 C CNN
-F 2 "LED_SMD:LED_0805_2012Metric" H 8600 2350 50  0001 C CNN
-F 3 "https://katalog.we-online.de/led/datasheet/150080BS75000.pdf" H 8600 2350 50  0001 C CNN
-F 4 "150080BS75000" H 8600 2350 50  0001 C CNN "Manufacturer Part"
-F 5 "732-4982-1-ND" H 8600 2350 50  0001 C CNN "Digikey Part"
-	1    8600 2350
+P 8450 2350
+F 0 "D4" H 8443 2095 50  0000 C CNN
+F 1 "Blue 3.2" H 8443 2186 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 8450 2350 50  0001 C CNN
+F 3 "https://katalog.we-online.de/led/datasheet/150080BS75000.pdf" H 8450 2350 50  0001 C CNN
+F 4 "150080BS75000" H 8450 2350 50  0001 C CNN "Manufacturer Part"
+F 5 "732-4982-1-ND" H 8450 2350 50  0001 C CNN "Digikey Part"
+	1    8450 2350
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -577,10 +577,10 @@ Wire Wire Line
 	4500 4700 4800 4700
 Connection ~ 4500 4700
 Wire Wire Line
-	9000 2350 8750 2350
+	8900 2350 8600 2350
 Wire Wire Line
-	8450 2350 8150 2350
-Text HLabel 9000 2350 2    50   Input ~ 0
+	8300 2350 8150 2350
+Text HLabel 8900 2350 2    50   Input ~ 0
 0VA
 $Comp
 L Device:LED D3
@@ -619,72 +619,55 @@ EXT_ADC
 $Comp
 L Device:R_Small R9
 U 1 1 5ED6C5A9
-P 7900 1850
-F 0 "R9" V 7704 1850 50  0000 C CNN
-F 1 "470" V 7795 1850 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 7900 1850 50  0001 C CNN
-F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1773204-3&DocType=DS&DocLang=English" H 7900 1850 50  0001 C CNN
-F 4 "CRGCQ0603J470R" H 7900 1850 50  0001 C CNN "Manufacturer Part"
-F 5 "A130089CT-ND" H 7900 1850 50  0001 C CNN "Digikey Part"
-	1    7900 1850
+P 8050 1850
+F 0 "R9" V 7854 1850 50  0000 C CNN
+F 1 "510" V 7945 1850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 8050 1850 50  0001 C CNN
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1773204&DocType=DS&DocLang=English" H 8050 1850 50  0001 C CNN
+F 4 "CRG0805F510R" H 8050 1850 50  0001 C CNN "Manufacturer Part"
+F 5 " A126372CT-ND" H 8050 1850 50  0001 C CNN "Digikey Part"
+	1    8050 1850
 	0    1    1    0   
 $EndComp
 $Comp
 L power:GND #PWR0114
 U 1 1 5ED6CF49
-P 9250 1850
-F 0 "#PWR0114" H 9250 1600 50  0001 C CNN
-F 1 "GND" H 9255 1677 50  0000 C CNN
-F 2 "" H 9250 1850 50  0001 C CNN
-F 3 "" H 9250 1850 50  0001 C CNN
-	1    9250 1850
+P 9000 1850
+F 0 "#PWR0114" H 9000 1600 50  0001 C CNN
+F 1 "GND" H 9005 1677 50  0000 C CNN
+F 2 "" H 9000 1850 50  0001 C CNN
+F 3 "" H 9000 1850 50  0001 C CNN
+	1    9000 1850
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:LED D6
-U 1 1 5ED73A7E
-P 8850 1850
-F 0 "D6" H 8843 1595 50  0000 C CNN
-F 1 "Red 2" H 8843 1686 50  0000 C CNN
-F 2 "LED_SMD:LED_0805_2012Metric" H 8850 1850 50  0001 C CNN
-F 3 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493505/LS%20R976.pdf" H 8850 1850 50  0001 C CNN
-F 4 "LS R976-NR-1" H 8850 1850 50  0001 C CNN "Manufacturer Part"
-F 5 "475-1278-1-ND" H 8850 1850 50  0001 C CNN "Digikey Part"
-	1    8850 1850
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
-	8500 1850 8700 1850
-Wire Wire Line
-	9000 1850 9250 1850
-Wire Wire Line
-	8000 1850 8200 1850
+	8150 1850 8350 1850
 $Comp
 L Device:LED D5
 U 1 1 5ED6FA88
-P 8350 1850
-F 0 "D5" H 8343 1595 50  0000 C CNN
-F 1 "Red 2" H 8343 1686 50  0000 C CNN
-F 2 "LED_SMD:LED_0805_2012Metric" H 8350 1850 50  0001 C CNN
-F 3 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493505/LS%20R976.pdf" H 8350 1850 50  0001 C CNN
-F 4 "LS R976-NR-1" H 8350 1850 50  0001 C CNN "Manufacturer Part"
-F 5 "475-1278-1-ND" H 8350 1850 50  0001 C CNN "Digikey Part"
-	1    8350 1850
+P 8500 1850
+F 0 "D5" H 8493 1595 50  0000 C CNN
+F 1 "Red 2" H 8493 1686 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 8500 1850 50  0001 C CNN
+F 3 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493505/LS%20R976.pdf" H 8500 1850 50  0001 C CNN
+F 4 "LS R976-NR-1" H 8500 1850 50  0001 C CNN "Manufacturer Part"
+F 5 "475-1278-1-ND" H 8500 1850 50  0001 C CNN "Digikey Part"
+	1    8500 1850
 	-1   0    0    1   
 $EndComp
 $Comp
 L power:+12V #PWR0115
 U 1 1 5ED823DC
-P 7700 1850
-F 0 "#PWR0115" H 7700 1700 50  0001 C CNN
-F 1 "+12V" V 7715 1978 50  0000 L CNN
-F 2 "" H 7700 1850 50  0001 C CNN
-F 3 "" H 7700 1850 50  0001 C CNN
-	1    7700 1850
+P 7850 1850
+F 0 "#PWR0115" H 7850 1700 50  0001 C CNN
+F 1 "+12V" V 7865 1978 50  0000 L CNN
+F 2 "" H 7850 1850 50  0001 C CNN
+F 3 "" H 7850 1850 50  0001 C CNN
+	1    7850 1850
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	7700 1850 7800 1850
+	7850 1850 7950 1850
 Text Notes 8250 1150 0    50   ~ 0
 Data in
 Wire Wire Line
@@ -913,4 +896,6 @@ Text HLabel 7200 2550 0    50   Input ~ 0
 GPIO5
 Text HLabel 7200 1000 1    50   Input ~ 0
 GPIO5
+Wire Wire Line
+	8650 1850 9000 1850
 $EndSCHEMATC
