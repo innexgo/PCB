@@ -87,19 +87,6 @@ F 3 "" H 1500 2250 50  0001 C CNN
 	1    1500 2250
 	1    0    0    -1  
 $EndComp
-$Comp
-L Custom:AL5802 U1
-U 1 1 5EB7BF0A
-P 4450 2200
-F 0 "U1" H 4450 2715 50  0000 C CNN
-F 1 "AL5802" H 4450 2624 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-6_Handsoldering" H 4450 2200 50  0001 C CNN
-F 3 "" H 4450 2200 50  0001 C CNN
-	1    4450 2200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4100 2200 3600 2200
 Wire Wire Line
 	3600 2200 3600 2450
 Wire Wire Line
@@ -110,15 +97,11 @@ Wire Wire Line
 	1700 2000 1700 2250
 Connection ~ 1700 2250
 Wire Wire Line
-	4100 2400 3900 2400
-Wire Wire Line
 	3900 2400 3900 2650
 Wire Wire Line
 	3900 2650 3300 2650
 Text HLabel 3300 2650 0    50   Input ~ 0
 EN
-Wire Wire Line
-	5600 2400 5600 2600
 $Comp
 L power:GND #PWR0104
 U 1 1 5EB81F76
@@ -130,15 +113,6 @@ F 3 "" H 5600 2600 50  0001 C CNN
 	1    5600 2600
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5000 2000 4800 2000
-Wire Wire Line
-	5000 2000 5000 1300
-Wire Wire Line
-	4800 2200 5000 2200
-Wire Wire Line
-	5000 2200 5000 2000
-Connection ~ 5000 2000
 $Comp
 L Device:R_Small R1
 U 1 1 5EB837D7
@@ -152,28 +126,10 @@ F 3 "~" H 5350 1550 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5350 1300 5350 1450
-$Comp
-L Device:R_POT RV1
-U 1 1 5EB854CF
-P 5350 2000
-F 0 "RV1" V 5235 2000 50  0000 C CNN
-F 1 "20" V 5144 2000 50  0000 C CNN
-F 2 "Custom:Bourns_3361_Pot" H 5350 2000 50  0001 C CNN
-F 3 "~" H 5350 2000 50  0001 C CNN
-	1    5350 2000
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	5350 1650 5350 1850
 Wire Wire Line
 	5000 1300 5350 1300
-Wire Wire Line
-	5600 2000 5600 2400
-Wire Wire Line
-	4800 2400 5600 2400
-Connection ~ 5600 2400
-Wire Wire Line
-	5500 2000 5600 2000
 $Comp
 L Device:LED_ALT D2
 U 1 1 5EB6F790
@@ -189,8 +145,6 @@ Wire Wire Line
 	1700 2000 2000 2000
 Wire Wire Line
 	2750 2000 3000 2000
-Wire Wire Line
-	3700 2000 4100 2000
 Wire Wire Line
 	2200 1250 3000 1250
 Text HLabel 2550 1350 2    50   Output ~ 0
@@ -214,7 +168,7 @@ U 1 1 5EB8BFEE
 P 6000 1500
 F 0 "H1" H 6100 1546 50  0000 L CNN
 F 1 "MountingHole" H 6100 1455 50  0000 L CNN
-F 2 "MountingHole:MountingHole_4.3mm_M4_DIN965_Pad" H 6000 1500 50  0001 C CNN
+F 2 "Custom:Hole_10mm" H 6000 1500 50  0001 C CNN
 F 3 "~" H 6000 1500 50  0001 C CNN
 	1    6000 1500
 	1    0    0    -1  
@@ -263,4 +217,147 @@ F 3 "~" H 7000 2500 50  0001 C CNN
 	1    7000 2500
 	1    0    0    -1  
 $EndComp
+$Comp
+L Mechanical:Fiducial FID1
+U 1 1 5ED8A454
+P 4000 3000
+F 0 "FID1" H 4085 3046 50  0000 L CNN
+F 1 "Fiducial" H 4085 2955 50  0000 L CNN
+F 2 "Fiducial:Fiducial_0.5mm_Mask1mm" H 4000 3000 50  0001 C CNN
+F 3 "~" H 4000 3000 50  0001 C CNN
+	1    4000 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID2
+U 1 1 5ED8A736
+P 4500 3000
+F 0 "FID2" H 4585 3046 50  0000 L CNN
+F 1 "Fiducial" H 4585 2955 50  0000 L CNN
+F 2 "Fiducial:Fiducial_0.5mm_Mask1mm" H 4500 3000 50  0001 C CNN
+F 3 "~" H 4500 3000 50  0001 C CNN
+	1    4500 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID3
+U 1 1 5ED8A91C
+P 5000 3000
+F 0 "FID3" H 5085 3046 50  0000 L CNN
+F 1 "Fiducial" H 5085 2955 50  0000 L CNN
+F 2 "Fiducial:Fiducial_0.5mm_Mask1mm" H 5000 3000 50  0001 C CNN
+F 3 "~" H 5000 3000 50  0001 C CNN
+	1    5000 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 2000 4100 2000
+Wire Wire Line
+	5500 2000 5600 2000
+Connection ~ 5600 2400
+Wire Wire Line
+	4800 2400 5600 2400
+Wire Wire Line
+	5600 2000 5600 2400
+$Comp
+L Device:R_POT RV1
+U 1 1 5EB854CF
+P 5350 2000
+F 0 "RV1" V 5235 2000 50  0000 C CNN
+F 1 "20" V 5144 2000 50  0000 C CNN
+F 2 "Custom:Bourns_3361_Pot" H 5350 2000 50  0001 C CNN
+F 3 "~" H 5350 2000 50  0001 C CNN
+	1    5350 2000
+	0    -1   -1   0   
+$EndComp
+Connection ~ 5000 2000
+Wire Wire Line
+	5000 2200 5000 2000
+Wire Wire Line
+	4800 2200 5000 2200
+Wire Wire Line
+	5000 2000 5000 1300
+Wire Wire Line
+	5000 2000 4800 2000
+Wire Wire Line
+	5600 2400 5600 2600
+Wire Wire Line
+	4100 2400 3900 2400
+Wire Wire Line
+	4100 2200 3600 2200
+$Comp
+L Custom:AL5802 U1
+U 1 1 5EB7BF0A
+P 4450 2200
+F 0 "U1" H 4450 2715 50  0000 C CNN
+F 1 "AL5802" H 4450 2624 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6_Handsoldering" H 4450 2200 50  0001 C CNN
+F 3 "" H 4450 2200 50  0001 C CNN
+	1    4450 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP1
+U 1 1 5ED9FB71
+P 6000 3150
+F 0 "TP1" H 6058 3268 50  0000 L CNN
+F 1 "TestPoint" H 6058 3177 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 6200 3150 50  0001 C CNN
+F 3 "~" H 6200 3150 50  0001 C CNN
+	1    6000 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP2
+U 1 1 5EDA0BD5
+P 6500 3150
+F 0 "TP2" H 6558 3268 50  0000 L CNN
+F 1 "TestPoint" H 6558 3177 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 6700 3150 50  0001 C CNN
+F 3 "~" H 6700 3150 50  0001 C CNN
+	1    6500 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP3
+U 1 1 5EDA0E9D
+P 7000 3150
+F 0 "TP3" H 7058 3268 50  0000 L CNN
+F 1 "TestPoint" H 7058 3177 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 7200 3150 50  0001 C CNN
+F 3 "~" H 7200 3150 50  0001 C CNN
+	1    7000 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP4
+U 1 1 5EDA10C4
+P 7500 3150
+F 0 "TP4" H 7558 3268 50  0000 L CNN
+F 1 "TestPoint" H 7558 3177 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 7700 3150 50  0001 C CNN
+F 3 "~" H 7700 3150 50  0001 C CNN
+	1    7500 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 3150 6500 3150
+Connection ~ 6500 3150
+Wire Wire Line
+	6500 3150 7000 3150
+Connection ~ 7000 3150
+Wire Wire Line
+	7000 3150 7500 3150
+$Comp
+L power:GND #PWR?
+U 1 1 5EDA1F0C
+P 7500 3150
+F 0 "#PWR?" H 7500 2900 50  0001 C CNN
+F 1 "GND" H 7505 2977 50  0000 C CNN
+F 2 "" H 7500 3150 50  0001 C CNN
+F 3 "" H 7500 3150 50  0001 C CNN
+	1    7500 3150
+	1    0    0    -1  
+$EndComp
+Connection ~ 7500 3150
 $EndSCHEMATC

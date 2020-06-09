@@ -281,58 +281,6 @@ Text HLabel 6500 3800 0    50   Input ~ 0
 EN
 Text HLabel 6500 4600 0    50   Input ~ 0
 GPIO15
-$Comp
-L Device:R_Small R1
-U 1 1 5ED07E8D
-P 6900 3000
-F 0 "R1" V 6704 3000 50  0000 C CNN
-F 1 "12K" V 6795 3000 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 6900 3000 50  0001 C CNN
-F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1773204-3&DocType=DS&DocLang=English" H 6900 3000 50  0001 C CNN
-F 4 "CRGCQ0603F12K" V 6900 3000 50  0001 C CNN "Manufacturer Part"
-F 5 "A129701CT-ND" V 6900 3000 50  0001 C CNN "Digikey Part"
-	1    6900 3000
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_Small R2
-U 1 1 5ED08CF0
-P 6900 3400
-F 0 "R2" V 6704 3400 50  0000 C CNN
-F 1 "12K" V 6795 3400 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 6900 3400 50  0001 C CNN
-F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1773204-3&DocType=DS&DocLang=English" H 6900 3400 50  0001 C CNN
-F 4 "CRGCQ0603F12K" V 6900 3400 50  0001 C CNN "Manufacturer Part"
-F 5 "A129701CT-ND" V 6900 3400 50  0001 C CNN "Digikey Part"
-	1    6900 3400
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_Small R4
-U 1 1 5ED0A079
-P 6900 3800
-F 0 "R4" V 6704 3800 50  0000 C CNN
-F 1 "12K" V 6795 3800 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 6900 3800 50  0001 C CNN
-F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1773204-3&DocType=DS&DocLang=English" H 6900 3800 50  0001 C CNN
-F 4 "CRGCQ0603F12K" V 6900 3800 50  0001 C CNN "Manufacturer Part"
-F 5 "A129701CT-ND" V 6900 3800 50  0001 C CNN "Digikey Part"
-	1    6900 3800
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_Small R5
-U 1 1 5ED0A4A6
-P 6900 4600
-F 0 "R5" V 6704 4600 50  0000 C CNN
-F 1 "12K" V 6795 4600 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 6900 4600 50  0001 C CNN
-F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1773204-3&DocType=DS&DocLang=English" H 6900 4600 50  0001 C CNN
-F 4 "CRGCQ0603F12K" V 6900 4600 50  0001 C CNN "Manufacturer Part"
-F 5 "A129701CT-ND" V 6900 4600 50  0001 C CNN "Digikey Part"
-	1    6900 4600
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	6500 3000 6800 3000
 Wire Wire Line
@@ -379,19 +327,6 @@ Wire Wire Line
 	7200 3800 7000 3800
 Connection ~ 7200 3400
 Connection ~ 7200 3800
-$Comp
-L Device:R_Small R3
-U 1 1 5ED09D00
-P 7200 4100
-F 0 "R3" H 7259 4146 50  0000 L CNN
-F 1 "12K" H 7259 4055 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 7200 4100 50  0001 C CNN
-F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1773204-3&DocType=DS&DocLang=English" H 7200 4100 50  0001 C CNN
-F 4 "CRGCQ0603F12K" V 7200 4100 50  0001 C CNN "Manufacturer Part"
-F 5 "A129701CT-ND" V 7200 4100 50  0001 C CNN "Digikey Part"
-	1    7200 4100
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7200 3800 7200 4000
 Wire Wire Line
@@ -445,21 +380,6 @@ F 3 "" H 6000 1050 50  0001 C CNN
 	1    6000 1050
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R_Small R6
-U 1 1 5ED334CB
-P 6000 1150
-F 0 "R6" H 6059 1196 50  0000 L CNN
-F 1 "470" H 6059 1105 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 6000 1150 50  0001 C CNN
-F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1773204-3&DocType=DS&DocLang=English" H 6000 1150 50  0001 C CNN
-F 4 "CRGCQ0603J470R" H 6000 1150 50  0001 C CNN "Manufacturer Part"
-F 5 "A130089CT-ND" H 6000 1150 50  0001 C CNN "Digikey Part"
-	1    6000 1150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6000 1400 6000 1250
 $Comp
 L Connector:Conn_01x04_Male J2
 U 1 1 5ED40813
@@ -585,14 +505,14 @@ Text HLabel 8900 2350 2    50   Input ~ 0
 $Comp
 L Device:LED D3
 U 1 1 5ED5942E
-P 6000 1550
-F 0 "D3" V 6039 1432 50  0000 R CNN
-F 1 "Blue 3.2" V 5948 1432 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric" H 6000 1550 50  0001 C CNN
-F 3 "https://katalog.we-online.de/led/datasheet/150080BS75000.pdf" H 6000 1550 50  0001 C CNN
-F 4 "150080BS75000" H 6000 1550 50  0001 C CNN "Manufacturer Part"
-F 5 "732-4982-1-ND" H 6000 1550 50  0001 C CNN "Digikey Part"
-	1    6000 1550
+P 6000 1200
+F 0 "D3" V 6039 1082 50  0000 R CNN
+F 1 "Blue 3.2" V 5948 1082 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 6000 1200 50  0001 C CNN
+F 3 "https://katalog.we-online.de/led/datasheet/150080BS75000.pdf" H 6000 1200 50  0001 C CNN
+F 4 "150080BS75000" H 6000 1200 50  0001 C CNN "Manufacturer Part"
+F 5 "732-4982-1-ND" H 6000 1200 50  0001 C CNN "Digikey Part"
+	1    6000 1200
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
@@ -619,14 +539,14 @@ EXT_ADC
 $Comp
 L Device:R_Small R9
 U 1 1 5ED6C5A9
-P 8050 1850
-F 0 "R9" V 7854 1850 50  0000 C CNN
-F 1 "510" V 7945 1850 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 8050 1850 50  0001 C CNN
-F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1773204&DocType=DS&DocLang=English" H 8050 1850 50  0001 C CNN
-F 4 "CRG0805F510R" H 8050 1850 50  0001 C CNN "Manufacturer Part"
-F 5 " A126372CT-ND" H 8050 1850 50  0001 C CNN "Digikey Part"
-	1    8050 1850
+P 8550 1850
+F 0 "R9" V 8354 1850 50  0000 C CNN
+F 1 "510" V 8445 1850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 8550 1850 50  0001 C CNN
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1773204&DocType=DS&DocLang=English" H 8550 1850 50  0001 C CNN
+F 4 "CRG0805F510R" H 8550 1850 50  0001 C CNN "Manufacturer Part"
+F 5 " A126372CT-ND" H 8550 1850 50  0001 C CNN "Digikey Part"
+	1    8550 1850
 	0    1    1    0   
 $EndComp
 $Comp
@@ -640,19 +560,17 @@ F 3 "" H 9000 1850 50  0001 C CNN
 	1    9000 1850
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8150 1850 8350 1850
 $Comp
 L Device:LED D5
 U 1 1 5ED6FA88
-P 8500 1850
-F 0 "D5" H 8493 1595 50  0000 C CNN
-F 1 "Red 2" H 8493 1686 50  0000 C CNN
-F 2 "LED_SMD:LED_0805_2012Metric" H 8500 1850 50  0001 C CNN
-F 3 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493505/LS%20R976.pdf" H 8500 1850 50  0001 C CNN
-F 4 "LS R976-NR-1" H 8500 1850 50  0001 C CNN "Manufacturer Part"
-F 5 "475-1278-1-ND" H 8500 1850 50  0001 C CNN "Digikey Part"
-	1    8500 1850
+P 8100 1850
+F 0 "D5" H 8093 1595 50  0000 C CNN
+F 1 "Red 2" H 8093 1686 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 8100 1850 50  0001 C CNN
+F 3 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493505/LS%20R976.pdf" H 8100 1850 50  0001 C CNN
+F 4 "LS R976-NR-1" H 8100 1850 50  0001 C CNN "Manufacturer Part"
+F 5 "475-1278-1-ND" H 8100 1850 50  0001 C CNN "Digikey Part"
+	1    8100 1850
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -786,28 +704,6 @@ Wire Wire Line
 	4500 4700 4500 4850
 Wire Wire Line
 	4500 5150 4500 5350
-$Comp
-L Mechanical:MountingHole H1
-U 1 1 5ED023A0
-P 10300 1050
-F 0 "H1" H 10400 1096 50  0000 L CNN
-F 1 "MountingHole" H 10400 1005 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 10300 1050 50  0001 C CNN
-F 3 "~" H 10300 1050 50  0001 C CNN
-	1    10300 1050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H2
-U 1 1 5ED026F2
-P 10300 1350
-F 0 "H2" H 10400 1396 50  0000 L CNN
-F 1 "MountingHole" H 10400 1305 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 10300 1350 50  0001 C CNN
-F 3 "~" H 10300 1350 50  0001 C CNN
-	1    10300 1350
-	1    0    0    -1  
-$EndComp
 Text HLabel 6650 1800 3    50   Input ~ 0
 0VA
 $Comp
@@ -883,11 +779,11 @@ L Device:R_Small R14
 U 1 1 5ECFC284
 P 7200 2650
 F 0 "R14" H 7050 2600 50  0000 C CNN
-F 1 "12K" H 7050 2700 50  0000 C CNN
+F 1 "10K" H 7050 2700 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 7200 2650 50  0001 C CNN
-F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1773204-3&DocType=DS&DocLang=English" H 7200 2650 50  0001 C CNN
-F 4 "CRGCQ0603F12K" V 7200 2650 50  0001 C CNN "Manufacturer Part"
-F 5 "A129701CT-ND" V 7200 2650 50  0001 C CNN "Digikey Part"
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1773204-https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1773204-3&DocType=DS&DocLang=English" H 7200 2650 50  0001 C CNN
+F 4 "CRGCQ0603F10K" V 7200 2650 50  0001 C CNN "Manufacturer Part"
+F 5 "A129700CT-ND" V 7200 2650 50  0001 C CNN "Digikey Part"
 	1    7200 2650
 	-1   0    0    1   
 $EndComp
@@ -898,4 +794,152 @@ Text HLabel 7200 1000 1    50   Input ~ 0
 GPIO5
 Wire Wire Line
 	8650 1850 9000 1850
+$Comp
+L Device:R_Small R6
+U 1 1 5ED1EA8A
+P 6000 1600
+F 0 "R6" H 6100 1650 50  0000 C CNN
+F 1 "22" H 6100 1550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 6000 1600 50  0001 C CNN
+F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf" H 6000 1600 50  0001 C CNN
+F 4 "ERJ-3EKF22R0V" H 6000 1600 50  0001 C CNN "Manufacturer Part"
+F 5 "P22.0HCT-ND" H 6000 1600 50  0001 C CNN "Digikey Part"
+	1    6000 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5ED023A0
+P 9500 1000
+F 0 "H1" H 9600 1046 50  0000 L CNN
+F 1 "MountingHole" H 9600 955 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 9500 1000 50  0001 C CNN
+F 3 "~" H 9500 1000 50  0001 C CNN
+	1    9500 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5ED026F2
+P 9500 1300
+F 0 "H2" H 9600 1346 50  0000 L CNN
+F 1 "MountingHole" H 9600 1255 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 9500 1300 50  0001 C CNN
+F 3 "~" H 9500 1300 50  0001 C CNN
+	1    9500 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 1350 6000 1500
+Wire Wire Line
+	8250 1850 8450 1850
+$Comp
+L Device:R_Small R1
+U 1 1 5EE524DA
+P 6900 3000
+F 0 "R1" V 6700 3000 50  0000 C CNN
+F 1 "10K" V 6800 3000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 6900 3000 50  0001 C CNN
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1773204-https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1773204-3&DocType=DS&DocLang=English" H 6900 3000 50  0001 C CNN
+F 4 "CRGCQ0603F10K" V 6900 3000 50  0001 C CNN "Manufacturer Part"
+F 5 "A129700CT-ND" V 6900 3000 50  0001 C CNN "Digikey Part"
+	1    6900 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R2
+U 1 1 5EE52953
+P 6900 3400
+F 0 "R2" V 6700 3400 50  0000 C CNN
+F 1 "10K" V 6800 3400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 6900 3400 50  0001 C CNN
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1773204-https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1773204-3&DocType=DS&DocLang=English" H 6900 3400 50  0001 C CNN
+F 4 "CRGCQ0603F10K" V 6900 3400 50  0001 C CNN "Manufacturer Part"
+F 5 "A129700CT-ND" V 6900 3400 50  0001 C CNN "Digikey Part"
+	1    6900 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R4
+U 1 1 5EE52BD4
+P 6900 3800
+F 0 "R4" V 6700 3800 50  0000 C CNN
+F 1 "10K" V 6800 3800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 6900 3800 50  0001 C CNN
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1773204-https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1773204-3&DocType=DS&DocLang=English" H 6900 3800 50  0001 C CNN
+F 4 "CRGCQ0603F10K" V 6900 3800 50  0001 C CNN "Manufacturer Part"
+F 5 "A129700CT-ND" V 6900 3800 50  0001 C CNN "Digikey Part"
+	1    6900 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R5
+U 1 1 5EE52E53
+P 6900 4600
+F 0 "R5" V 6700 4600 50  0000 C CNN
+F 1 "10K" V 6800 4600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 6900 4600 50  0001 C CNN
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1773204-https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1773204-3&DocType=DS&DocLang=English" H 6900 4600 50  0001 C CNN
+F 4 "CRGCQ0603F10K" V 6900 4600 50  0001 C CNN "Manufacturer Part"
+F 5 "A129700CT-ND" V 6900 4600 50  0001 C CNN "Digikey Part"
+	1    6900 4600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R3
+U 1 1 5EE53299
+P 7200 4100
+F 0 "R3" H 7050 4050 50  0000 C CNN
+F 1 "10K" H 7050 4150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 7200 4100 50  0001 C CNN
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1773204-https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1773204-3&DocType=DS&DocLang=English" H 7200 4100 50  0001 C CNN
+F 4 "CRGCQ0603F10K" V 7200 4100 50  0001 C CNN "Manufacturer Part"
+F 5 "A129700CT-ND" V 7200 4100 50  0001 C CNN "Digikey Part"
+	1    7200 4100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Mechanical:Fiducial FID1
+U 1 1 5ED8C73E
+P 8700 3100
+F 0 "FID1" H 8785 3146 50  0000 L CNN
+F 1 "Fiducial" H 8785 3055 50  0000 L CNN
+F 2 "Fiducial:Fiducial_0.5mm_Mask1mm" H 8700 3100 50  0001 C CNN
+F 3 "~" H 8700 3100 50  0001 C CNN
+	1    8700 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID2
+U 1 1 5ED8CB06
+P 8700 3300
+F 0 "FID2" H 8785 3346 50  0000 L CNN
+F 1 "Fiducial" H 8785 3255 50  0000 L CNN
+F 2 "Fiducial:Fiducial_0.5mm_Mask1mm" H 8700 3300 50  0001 C CNN
+F 3 "~" H 8700 3300 50  0001 C CNN
+	1    8700 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID3
+U 1 1 5ED8CDBE
+P 8700 3500
+F 0 "FID3" H 8785 3546 50  0000 L CNN
+F 1 "Fiducial" H 8785 3455 50  0000 L CNN
+F 2 "Fiducial:Fiducial_0.5mm_Mask1mm" H 8700 3500 50  0001 C CNN
+F 3 "~" H 8700 3500 50  0001 C CNN
+	1    8700 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Graphic:Logo_Open_Hardware_Small LOGO1
+U 1 1 5EDDF5D2
+P 10000 2000
+F 0 "LOGO1" H 10247 2071 50  0000 L CNN
+F 1 "Logo_Open_Hardware_Small" H 10247 1980 50  0000 L CNN
+F 2 "Custom:OSHWLOGO_TOP_0.2_SC-ver" H 10000 2000 50  0001 C CNN
+F 3 "~" H 10000 2000 50  0001 C CNN
+	1    10000 2000
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

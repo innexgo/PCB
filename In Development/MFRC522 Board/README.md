@@ -1,10 +1,10 @@
-## MFRC522 board for the NodeMCUv3
+## MFRC522 board for the NodeMCUv2
 
 PCB files for the RFID controller board - in KiCad schematic and board layout.
 
 ## Description
 
-For usage with the NodeMCUv3, connects to the MFRC522 through SPI.
+For usage with the NodeMCUv2, connects to the MFRC522 through SPI.
 
 #### Features
 

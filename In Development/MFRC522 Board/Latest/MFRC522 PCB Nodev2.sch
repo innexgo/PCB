@@ -527,7 +527,7 @@ U 1 1 5EB997B9
 P 4050 5700
 F 0 "C10" V 3821 5700 50  0000 C CNN
 F 1 "22pF" V 3912 5700 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 4050 5700 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4050 5700 50  0001 C CNN
 F 3 "~" H 4050 5700 50  0001 C CNN
 	1    4050 5700
 	0    1    1    0   
@@ -538,7 +538,7 @@ U 1 1 5EB9A297
 P 5350 5700
 F 0 "C16" V 5121 5700 50  0000 C CNN
 F 1 "22pF" V 5212 5700 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 5350 5700 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5350 5700 50  0001 C CNN
 F 3 "~" H 5350 5700 50  0001 C CNN
 	1    5350 5700
 	0    1    1    0   
@@ -869,9 +869,9 @@ F 3 "~" H 8350 4450 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	7800 4450 8250 4450
+	7800 4450 8150 4450
 Wire Wire Line
-	8450 4450 8800 4450
+	8450 4450 8550 4450
 Wire Wire Line
 	8800 4950 8800 5100
 Wire Wire Line
@@ -956,7 +956,7 @@ F 3 "~" H 6550 3300 50  0001 C CNN
 	1    6550 3300
 	0    -1   -1   0   
 $EndComp
-Text Notes 8200 4100 0    50   ~ 0
+Text Notes 8700 4300 0    50   ~ 0
 R14: Prefer >29.2 ohm resistance >0.35W rated.\nMay have to increase Diode rating if R14 resistance is lowered.\nParasitic reverse current of diode at 100 C is 10mA. Needs testing.
 Wire Wire Line
 	5800 2750 5800 2850
@@ -1263,4 +1263,29 @@ F 3 "https://www.nxp.com/docs/en/data-sheet/MFRC522.pdf" H 4750 3250 50  0001 C 
 	1    4750 3250
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:R_Small R20
+U 1 1 5EDE0E89
+P 8350 4150
+F 0 "R20" V 8154 4150 50  0000 C CNN
+F 1 "R_Axial" V 8245 4150 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" H 8350 4150 50  0001 C CNN
+F 3 "~" H 8350 4150 50  0001 C CNN
+	1    8350 4150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8150 4450 8150 4150
+Wire Wire Line
+	8150 4150 8250 4150
+Connection ~ 8150 4450
+Wire Wire Line
+	8150 4450 8250 4450
+Wire Wire Line
+	8550 4150 8550 4450
+Connection ~ 8550 4450
+Wire Wire Line
+	8550 4450 8800 4450
+Wire Wire Line
+	8450 4150 8550 4150
 $EndSCHEMATC
