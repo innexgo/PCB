@@ -10,7 +10,7 @@ This repository contains various designs that may be used in our products.
 
 In this folder, there are projects in various states of completion, Assume that projects in this folder use designs that are licensed by others. Usage of these designs is *at your own risk*, both functionally and legally.
 
-#### Release Version
+#### Releases
 
 ---
 
