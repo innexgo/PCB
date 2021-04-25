@@ -35,8 +35,6 @@ Wire Wire Line
 Wire Wire Line
 	1000 1300 1650 1300
 Wire Wire Line
-	1000 1400 1650 1400
-Wire Wire Line
 	1000 1500 1650 1500
 Wire Wire Line
 	1000 1600 1650 1600
@@ -56,17 +54,16 @@ Wire Wire Line
 	1000 2300 1650 2300
 NoConn ~ 1650 1100
 NoConn ~ 1650 1200
-Text HLabel 1650 1500 2    50   Output ~ 0
+Text HLabel 1650 1600 2    50   Output ~ 0
 SCK
-Text HLabel 1650 1600 2    50   Input ~ 0
+Text HLabel 1650 1800 2    50   Input ~ 0
 MISO
-Text HLabel 1650 1800 2    50   Output ~ 0
+Text HLabel 1650 1700 2    50   Output ~ 0
 MOSI
-NoConn ~ 1650 1700
 NoConn ~ 1650 2100
 NoConn ~ 1650 2200
 NoConn ~ 1650 2300
-Text HLabel 1650 1900 2    50   Output ~ 0
+Text HLabel 1650 1500 2    50   Output ~ 0
 IRQ
 Text HLabel 1650 3500 2    50   Output ~ 0
 GPIO-TH
@@ -1153,7 +1150,7 @@ F 3 "~" H 8950 1100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:ToolingHole H5
+L MFRC522-PCB-Nodev2-rescue:ToolingHole-Mechanical H5
 U 1 1 5EB15676
 P 8100 1400
 F 0 "H5" H 8185 1446 50  0000 L CNN
@@ -1164,7 +1161,7 @@ F 3 "~" H 8100 1400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:ToolingHole H7
+L MFRC522-PCB-Nodev2-rescue:ToolingHole-Mechanical H7
 U 1 1 5EAF7D4C
 P 8850 1400
 F 0 "H7" H 8935 1446 50  0000 L CNN
@@ -1175,7 +1172,7 @@ F 3 "~" H 8850 1400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:ToolingHole H6
+L MFRC522-PCB-Nodev2-rescue:ToolingHole-Mechanical H6
 U 1 1 5EAF80D3
 P 8100 1650
 F 0 "H6" H 8185 1696 50  0000 L CNN
@@ -1197,7 +1194,7 @@ F 3 "~" H 8950 1750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Custom:MFRC522 U1
+L MFRC522-PCB-Nodev2-rescue:MFRC522-Custom U1
 U 1 1 5EA9A706
 P 4750 3250
 F 0 "U1" H 4550 3350 50  0000 L CNN
@@ -1235,22 +1232,10 @@ Wire Wire Line
 NoConn ~ 1650 3600
 NoConn ~ 1650 3900
 $Comp
-L power:+3.3V #PWR0106
-U 1 1 5F0CE5E6
-P 1650 1300
-F 0 "#PWR0106" H 1650 1150 50  0001 C CNN
-F 1 "+3.3V" V 1650 1400 50  0000 L CNN
-F 2 "" H 1650 1300 50  0001 C CNN
-F 3 "" H 1650 1300 50  0001 C CNN
-	1    1650 1300
-	0    1    1    0   
-$EndComp
-NoConn ~ 1650 1400
-$Comp
-L power:+3.3V #PWR?
+L power:+3.3V #PWR0105
 U 1 1 5F09AE72
 P 5650 2450
-F 0 "#PWR?" H 5650 2300 50  0001 C CNN
+F 0 "#PWR0105" H 5650 2300 50  0001 C CNN
 F 1 "+3.3V" V 5665 2578 50  0000 L CNN
 F 2 "" H 5650 2450 50  0001 C CNN
 F 3 "" H 5650 2450 50  0001 C CNN
@@ -1258,14 +1243,29 @@ F 3 "" H 5650 2450 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:+3.3V #PWR?
+L power:+3.3V #PWR0106
 U 1 1 5F09B301
 P 3700 3800
-F 0 "#PWR?" H 3700 3650 50  0001 C CNN
+F 0 "#PWR0106" H 3700 3650 50  0001 C CNN
 F 1 "+3.3V" H 3715 3928 50  0000 L CNN
 F 2 "" H 3700 3800 50  0001 C CNN
 F 3 "" H 3700 3800 50  0001 C CNN
 	1    3700 3800
 	-1   0    0    1   
 $EndComp
+NoConn ~ 1650 1300
+$Comp
+L power:+3.3V #PWR0109
+U 1 1 60861254
+P 1650 1400
+F 0 "#PWR0109" H 1650 1250 50  0001 C CNN
+F 1 "+3.3V" V 1650 1500 50  0000 L CNN
+F 2 "" H 1650 1400 50  0001 C CNN
+F 3 "" H 1650 1400 50  0001 C CNN
+	1    1650 1400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1000 1400 1650 1400
+NoConn ~ 1650 1900
 $EndSCHEMATC
