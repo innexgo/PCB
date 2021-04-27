@@ -709,7 +709,7 @@ U 1 1 5EE8A2CC
 P 8900 4850
 F 0 "BZ1" H 9052 4879 50  0000 L CNN
 F 1 "Buzzer" H 9052 4788 50  0000 L CNN
-F 2 "Buzzer_Beeper:Buzzer_12x9.5RM6.5" V 8875 4950 50  0001 C CNN
+F 2 "Custom:8.5mm_8.5mm_MLT_8530_BUZZER" V 8875 4950 50  0001 C CNN
 F 3 "~" V 8875 4950 50  0001 C CNN
 	1    8900 4850
 	1    0    0    -1  
@@ -723,17 +723,6 @@ F 1 "GND" H 8805 5777 50  0000 C CNN
 F 2 "" H 8800 5950 50  0001 C CNN
 F 3 "" H 8800 5950 50  0001 C CNN
 	1    8800 5950
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR0129
-U 1 1 5EECE706
-P 7800 4450
-F 0 "#PWR0129" H 7800 4300 50  0001 C CNN
-F 1 "+5V" H 7815 4623 50  0000 C CNN
-F 2 "" H 7800 4450 50  0001 C CNN
-F 3 "" H 7800 4450 50  0001 C CNN
-	1    7800 4450
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -776,7 +765,7 @@ L Device:R_Small R14
 U 1 1 5EF0556E
 P 8350 4450
 F 0 "R14" V 8546 4450 50  0000 C CNN
-F 1 "390" V 8455 4450 50  0000 C CNN
+F 1 "220" V 8455 4450 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" H 8350 4450 50  0001 C CNN
 F 3 "~" H 8350 4450 50  0001 C CNN
 	1    8350 4450
@@ -859,8 +848,6 @@ F 3 "~" H 7150 3350 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6550 3200 6950 3200
-Text Notes 8700 4300 0    50   ~ 0
-R14: Prefer >29.2 ohm resistance >0.35W rated.\nMay have to increase Diode rating if R14 resistance is lowered.\nParasitic reverse current of diode at 100 C is 10mA. Needs testing.
 Wire Wire Line
 	5800 2750 5800 2850
 Connection ~ 5800 2850
@@ -1404,7 +1391,7 @@ L Device:R_Small R21
 U 1 1 6095FA2D
 P 8350 4150
 F 0 "R21" V 8546 4150 50  0000 C CNN
-F 1 "390" V 8455 4150 50  0000 C CNN
+F 1 "220" V 8455 4150 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" H 8350 4150 50  0001 C CNN
 F 3 "~" H 8350 4150 50  0001 C CNN
 	1    8350 4150
@@ -1420,4 +1407,19 @@ Wire Wire Line
 Connection ~ 8150 4150
 Wire Wire Line
 	8150 4150 8150 4450
+$Comp
+L power:+3.3V #PWR0125
+U 1 1 608A03BF
+P 7800 4300
+F 0 "#PWR0125" H 7800 4150 50  0001 C CNN
+F 1 "+3.3V" H 7815 4473 50  0000 C CNN
+F 2 "" H 7800 4300 50  0001 C CNN
+F 3 "" H 7800 4300 50  0001 C CNN
+	1    7800 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 4450 7800 4300
+Text Notes 8700 4300 0    50   ~ 0
+R14: Prefer >29.2 ohm resistance >0.35W rated.\nMay have to increase Diode rating if R14 resistance is lowered.\nParasitic reverse current of diode at 100 C is 10mA. Needs testing.
 $EndSCHEMATC
