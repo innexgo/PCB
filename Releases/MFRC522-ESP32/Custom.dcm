@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP MFRC522
+D NXP MFRC522 RFID Frontend
+F https://www.nxp.com/docs/en/data-sheet/MFRC522.pdf
+$ENDCMP
+#
+#End Doc Library

@@ -62,14 +62,14 @@ MOSI
 NoConn ~ 1650 2100
 NoConn ~ 1650 2200
 NoConn ~ 1650 2300
-Text HLabel 1650 1100 2    50   Output ~ 0
+Text HLabel 1650 1500 2    50   Output ~ 0
 IRQ
-Text HLabel 1650 3300 2    50   Output ~ 0
+Text HLabel 1650 3500 2    50   Output ~ 0
 GPIO-TH
 NoConn ~ 1650 3700
 NoConn ~ 1650 3800
 NoConn ~ 1650 3400
-Text HLabel 1650 3200 2    50   Output ~ 0
+Text HLabel 1650 4000 2    50   Output ~ 0
 RST
 $Comp
 L power:+5V #PWR0102
@@ -657,7 +657,7 @@ F 3 "" H 1650 2800 50  0001 C CNN
 	1    1650 2800
 	0    -1   -1   0   
 $EndComp
-Text HLabel 1650 1500 2    50   BiDi ~ 0
+Text HLabel 1650 3300 2    50   BiDi ~ 0
 SDA
 NoConn ~ 1650 2000
 NoConn ~ 1650 3100
@@ -1085,12 +1085,27 @@ F 3 "~" H 8950 1750 50  0001 C CNN
 	1    8950 1750
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:R_Small R20
+U 1 1 5EDE0E89
+P 8350 3850
+F 0 "R20" V 8154 3850 50  0000 C CNN
+F 1 "R_Axial" V 8245 3850 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" H 8350 3850 50  0001 C CNN
+F 3 "~" H 8350 3850 50  0001 C CNN
+	1    8350 3850
+	0    1    1    0   
+$EndComp
 Connection ~ 8150 4450
 Wire Wire Line
 	8150 4450 8250 4450
+Wire Wire Line
+	8550 3850 8550 4150
 Connection ~ 8550 4450
 Wire Wire Line
 	8550 4450 8800 4450
+Wire Wire Line
+	8450 3850 8550 3850
 NoConn ~ 1650 3600
 NoConn ~ 1650 3900
 $Comp
@@ -1147,7 +1162,7 @@ Wire Wire Line
 	3000 6300 3000 6350
 Wire Wire Line
 	3000 6750 3000 6900
-Text HLabel 1650 4000 2    50   Input ~ 0
+Text HLabel 1650 1100 2    50   Input ~ 0
 STATUS1
 $Comp
 L Device:R_Small R4
@@ -1160,7 +1175,7 @@ F 3 "~" H 2300 6200 50  0001 C CNN
 	1    2300 6200
 	1    0    0    -1  
 $EndComp
-Text HLabel 1650 3500 2    50   Output ~ 0
+Text HLabel 1650 3200 2    50   Output ~ 0
 STATUS2
 Text HLabel 2300 5950 1    50   Input ~ 0
 STATUS1
@@ -1367,6 +1382,10 @@ Wire Wire Line
 Connection ~ 3000 6350
 Wire Wire Line
 	3000 6350 3000 6450
+Wire Wire Line
+	8150 3850 8150 4150
+Wire Wire Line
+	8250 3850 8150 3850
 $Comp
 L Device:R_Small R21
 U 1 1 6095FA2D
@@ -1380,10 +1399,12 @@ F 3 "~" H 8350 4150 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8450 4150 8550 4150
+Connection ~ 8550 4150
 Wire Wire Line
 	8550 4150 8550 4450
 Wire Wire Line
 	8250 4150 8150 4150
+Connection ~ 8150 4150
 Wire Wire Line
 	8150 4150 8150 4450
 $Comp
