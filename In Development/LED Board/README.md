@@ -4,8 +4,6 @@ PCB files for a LED light - in KiCad schematic and board layout.
 
 ## Description
 
-For usage with the NodeMCUv3, connects to the MFRC522 through SPI.
-
 #### Features
 
 - ###### ~20mA current controlled
