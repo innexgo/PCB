@@ -132,7 +132,6 @@ NoConn ~ 5400 3250
 NoConn ~ 5400 3350
 NoConn ~ 4400 3900
 NoConn ~ 4100 3600
-NoConn ~ 4100 2900
 NoConn ~ 4100 3500
 Text HLabel 4500 2000 1    50   BiDi ~ 0
 MISO
@@ -1382,4 +1381,23 @@ Text Label 3950 6100 2    50   Italic 0
 Antenna_P
 Text Notes 8150 7650 0    50   ~ 0
 02/06/2022\n
+$Comp
+L power:GND #PWR?
+U 1 1 628873A7
+P 3800 2700
+F 0 "#PWR?" H 3800 2450 50  0001 C CNN
+F 1 "GND" H 3805 2527 50  0000 C CNN
+F 2 "" H 3800 2700 50  0001 C CNN
+F 3 "" H 3800 2700 50  0001 C CNN
+	1    3800 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 2900 3950 2900
+Wire Wire Line
+	3950 2900 3950 2650
+Wire Wire Line
+	3950 2650 3800 2650
+Wire Wire Line
+	3800 2650 3800 2700
 $EndSCHEMATC
