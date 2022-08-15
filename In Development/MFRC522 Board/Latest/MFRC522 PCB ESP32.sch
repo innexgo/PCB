@@ -755,21 +755,6 @@ F 3 "~" H 8200 5550 50  0001 C CNN
 	1    8200 5550
 	0    -1   -1   0   
 $EndComp
-$Comp
-L Device:R_Small R14
-U 1 1 5EF0556E
-P 8350 4450
-F 0 "R14" V 8546 4450 50  0000 C CNN
-F 1 "110" V 8455 4450 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 8350 4450 50  0001 C CNN
-F 3 "~" H 8350 4450 50  0001 C CNN
-	1    8350 4450
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	7800 4450 8150 4450
-Wire Wire Line
-	8450 4450 8550 4450
 Wire Wire Line
 	8800 4950 8800 5100
 Wire Wire Line
@@ -1078,12 +1063,6 @@ F 3 "~" H 8950 1750 50  0001 C CNN
 	1    8950 1750
 	1    0    0    -1  
 $EndComp
-Connection ~ 8150 4450
-Wire Wire Line
-	8150 4450 8250 4450
-Connection ~ 8550 4450
-Wire Wire Line
-	8550 4450 8800 4450
 NoConn ~ 1650 3600
 NoConn ~ 1650 3900
 $Comp
@@ -1334,25 +1313,6 @@ Connection ~ 3000 6350
 Wire Wire Line
 	3000 6350 3000 6450
 $Comp
-L Device:R_Small R21
-U 1 1 6095FA2D
-P 8350 4150
-F 0 "R21" V 8546 4150 50  0000 C CNN
-F 1 "110" V 8455 4150 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 8350 4150 50  0001 C CNN
-F 3 "~" H 8350 4150 50  0001 C CNN
-	1    8350 4150
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	8450 4150 8550 4150
-Wire Wire Line
-	8550 4150 8550 4450
-Wire Wire Line
-	8250 4150 8150 4150
-Wire Wire Line
-	8150 4150 8150 4450
-$Comp
 L power:+3.3V #PWR0125
 U 1 1 608A03BF
 P 7800 4300
@@ -1400,4 +1360,6 @@ Wire Wire Line
 	3950 2650 3800 2650
 Wire Wire Line
 	3800 2650 3800 2700
+Wire Wire Line
+	7800 4450 8800 4450
 $EndSCHEMATC
