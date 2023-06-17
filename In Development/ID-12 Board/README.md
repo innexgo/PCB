@@ -6,7 +6,7 @@ PCB files for the RFID controller board in KiCad schematic and board layout.
 - Power LED
 - 2 Status LEDs
 - 3.3v Buzzer on board 
-- Allows for breadboarding off of unused ESP32 pins
+- Allows for jumpering unused ESP32 pins
 
 # Description
 ---
