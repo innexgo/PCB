@@ -18,7 +18,7 @@ For usage with the NodeMCUv2, connects to the MFRC522 through SPI.
 
 ## Licenses
 
-The antenna and matching circuitry was designed by Limor Fried/Ladyada for Adafruit Industries.
+The antenna and matching circuitry was designed by Limor Fried/Ladyada and Kevin Townsend for Adafruit Industries.
 
 It has been adapted to be used with the MFRC522 IC from NXP.
 
